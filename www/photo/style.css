@@ -1,0 +1,322 @@
+/* photo qui defile sous le lecteur
+logo insta... en bas dans contact 
+typo
+*/
+
+
+*{
+    color: white;
+    font-size:12px;
+    font-family: "arazati-expandida-webfont.woff", 'arazati-expandida-webfont.woff2',serif;   
+    box-sizing: border-box; /* pour maîtriser width et flex-basis */
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+
+src: url('arazati-expandida-webfont.woff') ;
+src: url('arazati-expandida-webfont.woff2');
+}
+
+a{
+
+text-decoration: none;
+}
+
+.contenu{
+   
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.apropos{
+   
+    display: flex;
+    
+    align-items: center;
+
+    
+}
+.boite1{
+   
+    display: block;
+    
+    width: 50%;
+    padding: 5%;
+    font-size: 20px;
+
+    
+}
+.description{
+   font-size: 16px;
+}
+
+
+.liens{
+   display: block;
+  text-align: center;
+  margin-top: 10%;
+  font-size: medium;
+}
+
+
+#element1
+{   
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; height: 100%;
+
+   
+}
+#element1:before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(WIYAKE2.jpg) 0 0 repeat;
+}
+#element1:before
+{
+    display: block;
+    border: solid;
+    min-height: 100vh; /* toute la hauteur du viewport */
+    background-image:url(WIYAKE2.jpg) ;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 50% 80%;
+    background-position: 50% 50%;
+    background-size: cover; 
+}
+@keyframes leaves {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.20);
+        -webkit-transform: scale(1.20);
+    }
+}
+#element1:before {
+    animation: leaves 15s ease-in-out infinite alternate;
+    -webkit-animation: leaves 15s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#element2
+{   
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; height: 100%;
+    background-color: black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#element3
+{   
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; height: 100%;
+     background-color: black;
+   
+}
+
+
+
+
+
+
+#element4
+{   
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; height: 100%;
+     background-color: black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#element5
+{   
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; height: 100%;
+      background-color: black;
+   
+}
+
+
+
+
+
+
+header{
+
+    display: block;
+    position: fixed;
+   
+    top: 0;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    width: 13%;
+}
+
+h1
+{
+    
+    float: center;
+    text-align: center;
+    margin: 0;
+    
+
+    
+    
+    
+  
+  padding-top: 5em;
+}
+
+h2
+{
+    
+    display: block;
+    text-align: center;
+    margin: 0; 
+  padding-top: 5em;
+}
+
+
+
+nav{
+    /*
+    float: center;
+    text-align: left;
+    margin: 0;
+    border: solid;
+    */
+      float: center;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    
+
+    
+    
+    
+  
+  
+    
+}
+
+li{
+   
+    
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+
+.player{
+   display: block;
+    text-align: center;
+    margin: 0; 
+  padding-top: 5em;
+  padding-bottom: 10em;
+    
+}
+
+
+/* ====== Add Smooth effect ===== */
+$(function() {
+  var scrollToAnchor = function( id ) {
+    var elem = $("section[id='"+ id +"']"); // on crée une balise d'ancrage
+    if ( typeof elem.offset()  === "undefined" ) { // on verifie si l'élément existe
+        elem = $("#"+id); }
+    if ( typeof elem.offset()  !== "undefined" ) { // si l'élément existe, on continue
+      $('html, body').animate({
+              scrollTop: elem.offset().top }, 600 );} // on défini un temps de défilement de page
+  };
+  $("a").click(function( event ) { // on attache la fonction au click
+    if ( $(this).attr("href").match("#") ) { // on vérifie qu'il s'agit d'une ancre
+      event.preventDefault();
+      var href = $(this).attr('href').replace('#', '') // on scroll vers la cible
+      scrollToAnchor( href ); }
+  });
+});
+
+
+
+
+
+
+
+

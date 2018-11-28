@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<title>Wiyake</title>
+
+	</head>
+
+
+	
+
+
+
+	
+	<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+		
+
+
+
+		<div id="element1">
+		</div>
+
+		<div id="element2">
+		<br>
+		<br>
+		<br>
+		<br>
+			<hr >
+			<h2>ABOUT</h2>
+			<div class="contenu">
+				<div class="apropos">
+					<div class="boite1">
+						<p class="description">
+							Wíyake is the first eponymous EP of the Band lead by the young french singer Cléo Penet. 
+							<br>
+							<br>
+							The 5 self-produced tracks  have been wrote and recorded in Paris with her musicians. Mixing influences from New-Soul, Jazz, Trip-hop and electronic music, "Wíyake" ("feather" in an amerindian language) refers to a rite-of-passage into adulthood.
+							<br>
+							<br> 
+							In a constantly evolving the band is still writing and composing since the release of this First EP, trying to find new electronic lights and creating new contemplative spaces.
+						</p>
+					</div>
+					<div class="boite1">
+					<img src="photo/scene.jpg"  class="toftof">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="element3">
+			<br>
+		<br>
+		<br>
+		<br>
+			<hr >
+			<h2>MUSIC</h2>
+			<div class="contenu">
+				<div class="player">
+					<iframe style="border: 0; width: 400px; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=405311624/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="http://wiyake.bandcamp.com/album/w-yake">Wíyake by WÍYAKE</a></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div id="element4">
+		<br>
+		<br>
+		<br>
+		<br>
+			<hr width="70%">
+			<h2>GALLERY</h2>
+			<div class="contenu">
+				<img src="photo/scene.jpg" width="30%">
+				<img src="photo/stud.png" width="30%">
+				<img src="photo/pianomain.jpg" width="30%">
+				<img src="photo/synthetgars.jpg" width="30%">
+				<img src="photo/xilo.jpg" width="30%">
+			</div>
+		</div>
+		-->
+
+		<div id="element5">
+		<br>
+		<br>
+		<br>
+		<br>
+			<hr >
+			<h2>CONTACT</h2>
+			<div class="contenu">
+				<p class="liens"> 
+					contact@wiyake.com 
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<a href="https://www.facebook.com/wiyake/" target="blank" class="logo"><img src="FB-f-Logo__white_50.png" width="40px"></a>
+					<a href="https://wiyake.bandcamp.com/releases" target="blank" class="logo"><img src="bandcamp-button-square-black-64.png" width="40px"></a>
+					<a href="https://www.instagram.com/__wiyake__/?hl=fr" target="blank" class="logo"><img src="Instagram2016_white-(64px).png" width="40px"></a>
+					<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fwiyake&color=black_white&size=40" style="width: 40px; height: 40px;" class="logo"></iframe>
+
+
+				</p>
+			</div>
+		</div>
+
+	<header>
+				<h1>
+					<img src="photo/WIYAKE_plume détouré.png" width="130%">
+				</h1>
+				<br>
+				<nav>
+						
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<li><a class="js-scrollTo" href="#element1"> HOME </a></li> 
+						<br>
+						<br>
+						<br>
+						<br>
+						<li><a class="js-scrollTo" href="#element2"> ABOUT</a></li> 
+						<br>
+						<br>
+						<br>
+						<br>
+						<li><a class="js-scrollTo" href="#element3"> MUSIC</a></li>
+						<!--<br>
+						<br>
+						<br>
+						<br>
+						<li><a href="#element4"> GALLERY</a></li>-->
+						<br>
+						<br>
+						<br>
+						<br>
+						<li><a class="js-scrollTo" href="#element5">CONTACT</a></li>
+						<br>
+						
+					
+				</nav>
+			</header>
+			<div class="fren">
+			<a href="index.html">FR</a>/<a href="english.html">EN</a>
+			</div>
+
+
+</body>
+</html>
