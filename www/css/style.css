@@ -174,11 +174,15 @@ section#contact>p {
         z-index: 0;
     }
 
+    /*logo wiyake phone*/
     .hero-image>img {
         display: block;
         position: absolute;
-        top: -100px;
         width: 50em;
+        margin: auto;
+        text-align: center;
+        left:0;
+        right: 0;
     }
 
     nav {
