@@ -8,14 +8,6 @@
 
 /* GENERAL */
 
-.hidden {
-    display: none;
-}
-
-.displayed {
-    display: block;
-}
-
 * {
     box-sizing: border-box;
     font-family: "arazati-expandida",serif;
@@ -174,11 +166,16 @@ section#contact>p {
         z-index: 0;
     }
 
+    .hero-image {
+        background-size: 300%;
+        background-position-y: 60%; 
+    }
+
     /*logo wiyake phone*/
     .hero-image>img {
         display: block;
         position: absolute;
-        width: 50em;
+        width: 70%;
         margin: auto;
         text-align: center;
         left:0;
@@ -245,9 +242,16 @@ section#contact>p {
         width: 95%;
     }
 
+    section p {
+        font-size: 1rem;
+    }
+
     .about-container {
         flex-direction: column;
     }
 
+    section#about img {
+        display: none;
+    }
 
 }

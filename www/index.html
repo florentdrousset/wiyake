@@ -9,16 +9,27 @@
 </head>
 
 <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+					var page = $(this).attr('href'); // Page cible
+					var speed = 750; // Durée de l'animation (en ms)
+					$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+					return false;
+				});
+			});
+		</script>
     <nav>
         <a href="index.html">
             <img src="img/logos/wiyake-logo.png" alt="Logo Wiyake">
         </a>
         <div id="hamburger-content">
             <ul class="ul-content">
-                <li><a href="#home">accueil</a></li>
-                <li><a href="#about">à propos</a></li>
-                <li><a href="#music">musique</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#home" class="js-scrollTo">accueil</a></li>
+                <li><a href="#about" class="js-scrollTo">à propos</a></li>
+                <li><a href="#music" class="js-scrollTo">musique</a></li>
+                <li><a href="#contact" class="js-scrollTo">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -54,7 +65,7 @@
         <hr>
         <h2>musique</h2>
         <div id="player">
-            <iframe style="border: 0; width: 400px; height: 307px;"
+            <iframe style="border: 0; width: 300px; height: 307px;"
                 src="https://bandcamp.com/EmbeddedPlayer/album=405311624/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/"
                 seamless><a href="http://wiyake.bandcamp.com/album/w-yake">Wíyake by WÍYAKE</a></iframe>
         </div>
@@ -76,6 +87,7 @@
     </section>
 
     <script src="js/script.js"></script>
+    
 </body>
 
 </html>
