@@ -1,0 +1,137 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "arazati-expandida";
+    src: url("../fonts/arazati-expandida-webfont.woff2") format("woff2"),
+        url("../fonts/arazati-expandida-webfont.woff") format("woff");
+}
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    font-family: "arazati-expandida",serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color:white;
+}
+
+h2 {
+    font-family: "arazati-expandida",serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    color: white;
+    margin: 0;
+    margin: 0 auto 7% auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*HOME*/
+.hero-image {
+    background-image: url('../img/wiyake-hero-image.jpg');
+    background-position: center;
+    height: 100%;
+    z-index: 1;
+    border: solid 0px black;
+}
+
+nav {
+    position: fixed;
+    top: 6rem;
+    z-index: 1000;
+    width: 15%;
+}
+
+nav>a>img {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+}
+
+nav>ul {
+    list-style: none;
+    font-family: "arazati-expandida",serif;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 10rem;
+}
+
+nav>ul>li {
+    margin: 6rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/*SECTION:ABOUT*/
+
+section {
+    margin: auto;
+    height: 100%;
+    background-color: black;
+    border: solid 0px black;
+    padding-top: 5%;
+    font-size: 1.6rem;
+    width: 65%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+section#about>div>article {
+    width: 65%;
+    padding: 10rem;
+}
+
+section#about img {
+    width: 36%;
+    align-self: center; /*prevents picture from stretching w/ Flex*/
+}
+
+/*SECTION:MUSIC*/
+
+#player {
+    text-align: center;
+    margin-top: 10%;
+}
+
+/*SECTION:CONTACT*/
+
+section#contact>p {
+    text-align: center;
+    padding-top: 5em;
+}
+
+#network {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+#contact img {
+    width: 2.8em;
+}
+
