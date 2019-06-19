@@ -8,6 +8,14 @@
 
 /* GENERAL */
 
+.hidden {
+    display: none;
+}
+
+.displayed {
+    display: block;
+}
+
 * {
     box-sizing: border-box;
     font-family: "arazati-expandida",serif;
@@ -42,6 +50,19 @@ a {
     color: white;
 }
 
+#hamburger-sidebar {
+    list-style: none;
+    position:fixed;
+    width: 85%;
+    z-index: 200;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:black;
+    transform: translateX(-100%);
+    transition: transform .2s ease-out;
+}
+
 /*HOME*/
 .hero-image {
     background-image: url('../img/wiyake-hero-image.jpg');
@@ -49,6 +70,14 @@ a {
     height: 100%;
     z-index: 1;
     border: solid 0px black;
+}
+
+.hero-image>img {
+    display: none;
+}
+
+#hamburger-button {
+    display: none;
 }
 
 nav {
@@ -64,7 +93,7 @@ nav>a>img {
     width: 100%;
 }
 
-nav>ul {
+nav>div>ul {
     list-style: none;
     font-family: "arazati-expandida",serif;
     font-size: 1.2rem;
@@ -72,7 +101,7 @@ nav>ul {
     margin-top: 10rem;
 }
 
-nav>ul>li {
+nav>div>ul>li {
     margin: 6rem;
     color: white;
     text-transform: uppercase;
@@ -135,3 +164,86 @@ section#contact>p {
     width: 2.8em;
 }
 
+
+
+@media (max-width: 640px) {
+    nav>a>img {
+        display: none;
+        margin: 0 auto 2rem auto;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .hero-image>img {
+        display: block;
+        position: absolute;
+        top: -100px;
+        width: 50em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #hamburger-button {
+        position: fixed;
+        display: block;
+        z-index: 300;
+        background-color: transparent;
+        color: white;
+        border: solid white 0px;
+        font-size: 3em;
+        outline: none;
+    }
+
+    #hamburger-sidebar {
+        
+    }
+
+    #hamburger-sidebar ul {
+        list-style: none;
+        font-family: "arazati-expandida",serif;
+        padding: 0;
+        margin-top: 10rem;
+    }
+    
+    #hamburger-sidebar li {
+        font-size: 2rem;
+        margin: 6rem;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    #hamburger-content {
+        display: none;
+    }
+
+    #hamburger-button, #hamburger-sidebar,
+    .hamburger-activated #hamburger-overlay {
+        display: block;
+    }
+
+    .hamburger-activated #hamburger-sidebar {
+        transform: translateX(0);
+    }
+
+    /*SECTION:ABOUT*/
+    hr {
+        width: 70%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section#about>div>article {
+        width: 95%;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+
+}

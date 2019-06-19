@@ -13,14 +13,25 @@
         <a href="index.html">
             <img src="img/logos/wiyake-logo.png" alt="Logo Wiyake">
         </a>
-        <ul>
-            <li><a href="#home">accueil</a></li>
-            <li><a href="#about">à propos</a></li>
-            <li><a href="#music">musique</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
+        <div id="hamburger-content">
+            <ul class="ul-content">
+                <li><a href="#home">accueil</a></li>
+                <li><a href="#about">à propos</a></li>
+                <li><a href="#music">musique</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="hero-image" id="home"></div>
+    <div class="hero-image" id="home">
+        <img src="img/logos/wiyake-logo.png" alt="Logo Wiyake">
+        <div id="hamburger">
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+        </div>
+    </div>
     <section id="about">
         <hr>
         <h2>à propos</h2>
@@ -63,6 +74,8 @@
                     alt="logo Soundcloud"></a>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
